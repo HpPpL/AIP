@@ -74,7 +74,7 @@ void input()
 void output()
 {
     for(int i = 0; i < n; ++i){
-        printf("Отдeл номер, %d\nНазвание - %s \n", i+1, db[i].title.name_dprt);
+        printf("Отдeл номер %d\nНазвание - %s \n", i+1, db[i].title.name_dprt);
         printf("(Состав %d отдела: %d работников, начальник - %s)\n", i+1, db[i].composition.nmb_emp, db[i].composition.sname_chief);
         printf("Дата создания %d отдела - %d %d \n", i+1, db[i].date.year, db[i].date.month);
     }
@@ -86,8 +86,9 @@ void findstruct()
     int st_m, st_y, fn_m, fn_y;
     scanf("%d %d - %d %d", &st_y, &st_m, &fn_y, &fn_m);
     printf("Введите количество сотрудников ( минимальное количество - максимальное количество ):\n");
-    int cnt_mn, cnt_mx;
-    scanf("%d - %d", &cnt_mn, &cnt_mx);
+    int cnt_mn=0, cnt_mx=0;
+    scanf("%d - %d\n", &cnt_mn, &cnt_mx);
+    //printf("%\n %d - %d", cnt_mn, cnt_mx);
 
     // Начинаем обрабатывать массив структур)
     printf("Результат проверки:\n");
