@@ -1,0 +1,1 @@
+This repository contains completed laboratory work on c and c++.
