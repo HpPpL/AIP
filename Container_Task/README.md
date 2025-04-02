@@ -1,0 +1,1 @@
+This repository is dedicated to comparing the execution speed of various data structuring methods in C++.
